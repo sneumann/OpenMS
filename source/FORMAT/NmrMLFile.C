@@ -46,7 +46,7 @@ namespace OpenMS
 {
 
   NmrMLFile::NmrMLFile() :
-    XMLFile("/SCHEMAS/NmrML1.0.0.xsd", "1.0.0")
+    XMLFile("/SCHEMAS/nmrML.xsd", "0.1.0")
   {
   }
 
@@ -70,10 +70,11 @@ namespace OpenMS
   {
     //load mapping
     CVMappings mapping;
-    CVMappingFile().load(File::find("/MAPPING/NmrML-mapping.xml"), mapping);
+    CVMappingFile().load(File::find("/MAPPING/nmrML-mapping.xml"), mapping);
 
     //load cvs
     ControlledVocabulary cv;
+    cv.loadFromOBO("NMR", File::find("/CV/nmrML.obo"));
     cv.loadFromOBO("MS", File::find("/CV/psi-ms.obo"));
     cv.loadFromOBO("UO", File::find("/CV/unit.obo"));
 

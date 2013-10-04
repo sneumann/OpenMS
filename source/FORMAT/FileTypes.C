@@ -141,7 +141,7 @@ namespace OpenMS
     targetMap[FileTypes::MZXML] = "ISB mzXML file";
     targetMap[FileTypes::MGF] = "Mascot MGF file";
     targetMap[FileTypes::XMASS] = "Bruker FID file";
-
+    targetMap[FileTypes::NMRML] = "MSI nmrML file";
     return targetMap;
   }
 }

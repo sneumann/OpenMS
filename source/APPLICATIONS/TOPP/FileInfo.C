@@ -164,9 +164,9 @@ protected:
   virtual void registerOptionsAndFlags_()
   {
     registerInputFile_("in", "<file>", "", "input file ");
-    setValidFormats_("in", StringList::create("mzData,mzXML,mzML,dta,dta2d,mgf,featureXML,consensusXML,idXML,pepXML,fid"));
+    setValidFormats_("in", StringList::create("mzData,mzXML,mzML,dta,dta2d,mgf,featureXML,consensusXML,idXML,pepXML,fid,TraML,nmrML"));
     registerStringOption_("in_type", "<type>", "", "input file type -- default: determined from file extension or content", false);
-    setValidStrings_("in_type", StringList::create("mzData,mzXML,mzML,dta,dta2d,mgf,featureXML,consensusXML,idXML,pepXML,fid"));
+    setValidStrings_("in_type", StringList::create("mzData,mzXML,mzML,dta,dta2d,mgf,featureXML,consensusXML,idXML,pepXML,fid,TraML,nmrML"));
     registerOutputFile_("out", "<file>", "", "Optional output file. If left out, the output is written to the command line.", false);
     setValidFormats_("out", StringList::create("txt"));
     registerOutputFile_("out_tsv", "<file>", "", "Second optional output file. Tab separated flat text file.", false, true);
@@ -256,6 +256,16 @@ protected:
       case FileTypes::MZML:
         os << " against XML schema version " << MzMLFile().getVersion() << "\n";
         valid = MzMLFile().isValid(in, os);
+        break;
+
+      case FileTypes::TRAML:
+        os << " against XML schema version " << TraMLFile().getVersion() << "\n";
+        valid = TraMLFile().isValid(in, os);
+        break;
+
+      case FileTypes::NMRML:
+        os << " against XML schema version " << MzMLFile().getVersion() << "\n";
+        valid = NmrMLFile().isValid(in, os);
         break;
 
       case FileTypes::FEATUREXML:
