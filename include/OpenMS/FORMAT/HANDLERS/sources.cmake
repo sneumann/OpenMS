@@ -20,6 +20,7 @@ XTandemInfileXMLHandler.h
 MzIdentMLHandler.h
 MzQuantMLHandler.h
 TraMLHandler.h
+NmrMLHandler.h
 )
 
 ### add path to the filenames

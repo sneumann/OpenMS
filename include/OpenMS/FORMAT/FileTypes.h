@@ -79,6 +79,7 @@ namespace OpenMS
       QCML,               ///< qcML (will undergo standardisation maybe) (.qcml)
       GELML,              ///< GelML (HUPO PSI format) (.gelML)
       TRAML,              ///< TraML (HUPO PSI format) for transitions (.traML)
+      NMRML,              ///< nmrML (COSMOS MSI NMR format) for raw fid and processed NMR data (.nmrML)
       MSP,                ///< NIST spectra library file format (.msp)
       OMSSAXML,           ///< OMSSA XML file format for peptide identifications (.xml)
       MASCOTXML,          ///< Mascot XML file format for peptide identifications (.xml)

@@ -230,6 +230,10 @@ namespace OpenMS
     if (all_simple.hasSubstring("<TraML"))
       return FileTypes::TRAML;
 
+    //nmrML (all lines)
+    if (all_simple.hasSubstring("<nmrML"))
+      return FileTypes::TRAML;
+
     //OMSSAXML file
     if (all_simple.hasSubstring("<MSResponse"))
       return FileTypes::OMSSAXML;

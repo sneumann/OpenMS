@@ -10,6 +10,7 @@ SemanticValidator.C
 MzIdentMLValidator.C
 MzQuantMLValidator.C
 TraMLValidator.C
+NmrMLValidator.C
 )
 
 ### add path to the filenames

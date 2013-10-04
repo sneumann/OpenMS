@@ -67,6 +67,7 @@ MzIdentMLFile.C
 MzQuantMLFile.C
 QcMLFile.C
 TraMLFile.C
+NmrMLFile.C
 )
 
 ### add path to the filenames

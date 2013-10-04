@@ -83,6 +83,7 @@ FileTypes.h
 MzIdentMLFile.h
 MzQuantMLFile.h
 TraMLFile.h
+NmrMLFile.h
 XMassFile.h
 )
 

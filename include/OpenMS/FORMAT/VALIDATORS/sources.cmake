@@ -9,6 +9,7 @@ MzDataValidator.h
 SemanticValidator.h
 MzIdentMLValidator.h
 TraMLValidator.h
+NmrMLValidator.h
 )
 
 ### add path to the filenames

@@ -107,6 +107,7 @@ namespace OpenMS
     targetMap[FileTypes::QCML] = "qcml";
     targetMap[FileTypes::GELML] = "gelML";
     targetMap[FileTypes::TRAML] = "traML";
+    targetMap[FileTypes::NMRML] = "nmrML";
     targetMap[FileTypes::MSP] = "msp";
     targetMap[FileTypes::OMSSAXML] = "omssaXML";
     targetMap[FileTypes::MASCOTXML] = "mascotXML";

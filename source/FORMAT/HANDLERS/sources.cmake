@@ -17,6 +17,7 @@ set(sources_list
 	ParamXMLHandler.C
 	ToolDescriptionHandler.C
 	TraMLHandler.C
+	NmrMLHandler.C
 	UnimodXMLHandler.C
 	XMLHandler.C
 	XTandemInfileXMLHandler.C
